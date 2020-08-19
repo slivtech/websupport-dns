@@ -1,0 +1,156 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+}
+
+header {
+	background-color: #303236;
+	padding: 20px 15px;
+}
+header h1 {
+	margin: 0;
+}
+header h1 a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.container {
+	width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.dns-list-wrapper {
+	margin: 30px 0;
+}
+
+.dns-list-wrapper table.dns-list-table {
+	margin: 0 auto;
+	border-spacing: 0;
+	width: 100%;
+}
+
+.dns-list-wrapper table.dns-list-table tr th {
+	background-color: #4D555D;
+	color: #fff;
+	padding: 10px 15px;
+	text-align: left;
+
+}
+.dns-list-wrapper table.dns-list-table tr td {
+	padding: 15px;
+	border-bottom: 1px solid #e9ebee;
+}
+
+.dns-list-wrapper table.dns-list-table tr td p {
+	margin: 0;
+}
+
+.dns-list-wrapper table.dns-list-table tr td.type,
+.dns-list-wrapper table.dns-list-table tr td.remove{
+	max-width: 80px;
+	text-align: center;
+}
+
+.dns-list-wrapper table.dns-list-table tr td.note
+.dns-list-wrapper table.dns-list-table tr td.target-address {
+	max-width: 20vw;
+}
+
+.dns-list-wrapper table.dns-list-table tr td.remove > a {
+	background: #303236;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	width: 20px;
+	height: 20px;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	margin: 0 auto;
+}
+
+.notice-wrapper {
+	margin-top: 15px;
+}
+
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+
+.alert.alert-success {
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+
+.alert.alert-danger {
+	color: #721c24;
+	background-color: #f8d7da;
+	border-color: #f5c6cb;
+}
+
+.actions {
+	margin: 30px 0;
+}
+
+.button {
+	padding: 10px 20px;
+	text-align: left;
+	background-color: #009DFA;
+	color: #FFF;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+}
+
+#prio-group, #port-group, #weight-group {
+	display: none;
+}
+
+#prio-group.show, #port-group.show, #weight-group.show {
+	display: flex;
+}
+
+form.add-record {
+	max-width: 500px;
+	margin: 50px auto;
+}
+
+form.add-record .form-group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 15px 0;
+}
+
+form.add-record .form-group label {
+	margin-bottom: 5px;
+}
+
+form.add-record .form-group select,
+form.add-record .form-group input {
+	padding: 8px 15px;
+	border: 1px solid #303236;
+	border-radius: 5px;
+}
+
+form.add-record .form-group input.button {
+	border-color: #009DFA;
+	text-align: center;
+	cursor: pointer;
+}
